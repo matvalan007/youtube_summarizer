@@ -2,7 +2,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 import google.generativeai as genai
 
 def summarize(url):
-  api_key = "AIzaSyBEJRWslhYx7rCH1bRryv7F9HpyFBtOKv4"
+  api_key = "YOUR_GEMINI_API_KEY"
   video_id = url.split("watch?v=")[-1]
   transcript = YouTubeTranscriptApi.get_transcript(video_id)
   transcript = " ".join([line['text'] for line in transcript])
