@@ -1,0 +1,3 @@
+youtube_transcript_api==1.1.1
+google-api-python-client==2.176.0
+streamlit==1.46.1
